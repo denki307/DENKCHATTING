@@ -43,7 +43,6 @@ async def clone_txt(client, message):
                     BotCommand("chatbot", "Enable or disable chatbot"),
                     BotCommand("status", "Check chatbot enable or disable in chat"),
                     BotCommand("shayri", "Get random shayri for love"),
-                    BotCommand("repo", "Get chatbot source code"),
                 ])
         except (AccessTokenExpired, AccessTokenInvalid):
             await mi.edit_text("**Invalid bot token. Please provide a valid one.**")
